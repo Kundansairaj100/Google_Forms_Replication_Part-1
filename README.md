@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The Planned UI for the Project 
+<br/>
+![ss1](https://github.com/user-attachments/assets/a4e7b1d9-5c8f-41fb-91aa-8cc142e0cd86)
 
-## Getting Started
+The Planned State Management 
+![ss2](https://github.com/user-attachments/assets/e6dd633f-c6ef-40f2-af58-7439cf3de6a5)
 
-First, run the development server:
+-> Strategies to use State Variables across different Components: \
+How to work with state variables across different components and store them in a single recoil atom: \
+Solution 1: Combine the different components a single component ( Boring Solution ) \
+Solution 2: Push the setStateVariable() Function Down the DOM Tree ( Prop Drilling ) \
+Solution 3: Use Recoil Atoms for Each Component, gather them in the App file, and store them in a single combined atom ( Too many Atoms )(But the solution I used)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-> The final Atom was constructed in the Button.tsx component when clicked on the "Save & Next" or "Submit" Buttons.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Renders:
+-> The User can Select the type of Question which he wants to display:
+![ss6](https://github.com/user-attachments/assets/3cf94516-428c-4e5b-828c-ff9ed57b98c1)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1) With the type being Radio
+![ss3](https://github.com/user-attachments/assets/e78a1e5f-644a-4025-937f-bfa6c6544ac4)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3) With the type being Text
+![ss4](https://github.com/user-attachments/assets/b3b73c12-6511-4e37-9085-08d3c4744fc1)
 
-## Learn More
+5) With the type being Checkbox
+![ss5](https://github.com/user-attachments/assets/0b09d260-8107-4503-8a97-46b7ddf9a7f8)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project came to an end after running into this error consistently: 
 
-## Deploy on Vercel
+TypeError: react__WEBPACK_IMPORTED_MODULE_0___default().__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED is undefined \
+    currentRendererSupportsUseSyncExternalStore index.js:511 \
+    useRecoilValueLoadable index.js:5353 \
+    useRecoilValue index.js:5372 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Reason for this error can be found here : https://github.com/facebookexperimental/Recoil/issues/2318
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
