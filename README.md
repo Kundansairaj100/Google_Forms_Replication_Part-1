@@ -35,7 +35,10 @@ TypeError: react__WEBPACK_IMPORTED_MODULE_0___default().__SECRET_INTERNALS_DO_NO
     useRecoilValueLoadable index.js:5353 \
     useRecoilValue index.js:5372 
 
-The Reason for this error can be found here : https://github.com/facebookexperimental/Recoil/issues/2318
+The Reason for this error can be found here : https://github.com/facebookexperimental/Recoil/issues/2318 
+
+
+I will migrate to a new State Management Framework and attempt this project again!
 
 
 
